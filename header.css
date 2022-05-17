@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-logo {
+    margin: 36px;
+
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-items: flex-end;
+    margin-right: 36px;
+}
+
+.header-button {
+    margin-left: 20px;
+}
