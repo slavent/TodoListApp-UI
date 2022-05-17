@@ -50,21 +50,44 @@
     background-color: var(--color-darkgrey);
 }
 
-.icon-button {
+.icon-button-info {
     cursor: pointer;
     outline: none;
     height: 32px;
     width: 32px;
     border: none;
+    background-color: transparent;
     background-image: url(../images/icons/desktop-info-white.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.icon-button:hover,
-.icon-button:focus {
+.icon-button-info:hover,
+.icon-button-info:focus {
     background-image: url(../images/icons/desktop-info-white-hover.svg);
     background-repeat: no-repeat;
     background-position: center;
+    background-color: transparent;
+    transition: background-image var(--animation);
+}
+
+.icon-button-profile {
+    cursor: pointer;
+    outline: none;
+    height: 32px;
+    width: 32px;
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/icons/desktop-profile-white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-button-profile:hover,
+.icon-button-profile:focus {
+    background-image: url(../images/icons/desktop-profile-white-hover.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
     transition: background-image var(--animation);
 }
