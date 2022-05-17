@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Профиль</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/profile.css">
+</head>
+<body>
+<header>
+    <div class="logo_container">
+        <picture>
+            <source srcset="images/logo/desktop-logo.svg">
+            <img src="images/logo/desktop-logo.svg">
+        </picture>
+    </div>
+    <button class="info_button" onclick="document.location='info.html'">
+        <picture class="info_buttom_symbol">
+            <source srcset="images/icons/desktop-info-white.svg">
+            <img src="images/icons/desktop-info-white.svg">
+        </picture>
+    </button>
+</header>
+<section>
+    <div class="navigation">
+        <a class="nav_btm" href="index.html">
+            <picture>
+                <source srcset="images/icons/desktop-back-black.svg">
+                <img src="images/icons/desktop-back-black.svg">
+            </picture>
+            <p>Список дел</p>
+        </a>
+        <h2>Ваш профиль</h2>
+    </div>
+    <div class="profile">
+        <img class="profile__avatar" src="images/pictures/avatar.jpg">
+        <h2>Иванов Иван Иванович</h2>
+        <button class="edit_button" onclick="document.location='edit.html'">Редактировать</button>
+        <button class="exit_button">Выйти</button>
+        <button class="delete_button" >Удалить аккаунт</button>
+    </div>
+</section>
+
+</body>
+</html>
