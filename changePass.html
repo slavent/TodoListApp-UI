@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Изменить пароль</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/profile.css">
+</head>
+<body>
+<header>
+    <div class="logo_container">
+        <picture>
+            <source srcset="images/logo/desktop-logo.svg">
+            <img src="images/logo/desktop-logo.svg">
+        </picture>
+    </div>
+    <button class="info_button" onclick="document.location='info.html'">
+        <picture class="info_buttom_symbol">
+            <source srcset="images/icons/desktop-info-white.svg">
+            <img src="images/icons/desktop-info-white.svg">
+        </picture>
+    </button>
+</header>
+<section>
+    <div class="navigation">
+        <a class="nav_btm" href="edit.html">
+            <picture>
+                <source srcset="images/icons/desktop-back-black.svg">
+                <img src="images/icons/desktop-back-black.svg">
+            </picture>
+            <p>Редактирование профиля</p>
+        </a>
+        <h2>Изменить пароль</h2>
+    </div>
+    <div class="changePass">
+        <input class="changePass__new_pass" type="text" placeholder="Новый пароль">
+        <p>Пароль должен содержать минимум 8 символов</p>
+        <input class="changePass__repeat_pass" type="text" placeholder="Повторите новый пароль">
+        <button class="changePass__save_button">Сохранить</button>
+    </div>
+</section>
+</body>
+</html>
