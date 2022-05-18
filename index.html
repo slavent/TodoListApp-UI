@@ -9,26 +9,33 @@
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/button.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png">
+    <link rel="manifest" href="images/favicon//site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <header class="header">
-            <div class="header-logo">
-                <a class="nav_btm" href="index.html">
+        <div class="header-logo">
+            <a class="nav_btm" href="index.html">
                 <picture>
                     <source srcset="images/logo/mob-logo.svg" media="(maxwidth:320px)">
                     <img src="images/logo/desktop-logo.svg" alt="Logo">
                 </picture>
-                </a>
+            </a>
+        </div>
+        <div class="header-menu">
+            <div class="header-button">
+                <button class="icon-button-profile" onclick="document.location='profile.html'"></button>
             </div>
-            <div class="header-menu">
-                <div class="header-button">
-                    <button class="icon-button-profile" onclick="document.location='profile.html'"></button>
-                </div>
-                <div class="header-button">
-                    <button class="icon-button-info" onclick="document.location='info.html'"></button>
-                </div>
+            <div class="header-button">
+                <button class="icon-button-info" onclick="document.location='info.html'"></button>
             </div>
-        </header>
+        </div>
+    </header>
     <main class="main">
         <div class="tasks">
             <div class="task-list">
