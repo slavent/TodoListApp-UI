@@ -27,12 +27,14 @@ body {
     font-family: var(--font-family-r);
     height: 100%;
     display: grid;
-    grid-gap: 24px;
-    grid-template: 80px 1fr auto / 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 24px;
+    grid-template-columns: 36px 1fr 36px;
+    grid-template-rows: 80px 1fr 60px;
     grid-template-areas:
-        "header"
-        "tasks"
-        "create-new"
+        "header header header"
+        "...... main ......"
+        "...... create-new ......"
 }
 
 .header {
@@ -41,9 +43,9 @@ body {
 }
 
 .main {
-    grid-area: tasks;
-    /*width: minmax(360px, 900px);*/
-    margin: 0 36px;
+    grid-area: main;
+    width: 100%;
+    justify-self: center;
 }
 
 .main-button {

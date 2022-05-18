@@ -40,7 +40,7 @@
     border-radius: 50%;
     background-image: url(../images/icons/universal-add.svg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
 }
 
 .primary-button:hover,
