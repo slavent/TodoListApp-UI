@@ -34,7 +34,7 @@ body {
     grid-template-areas:
         "header header header"
         "...... main ......"
-        "...... create-new ......"
+        "...... footer ......"
 }
 
 .header {
@@ -48,7 +48,7 @@ body {
     justify-self: center;
 }
 
-.main-button {
-    grid-area: create-new;
+.footer {
+    grid-area: footer;
     margin: 0 auto;
 }
