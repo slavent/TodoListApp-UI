@@ -1,15 +1,40 @@
+:root {
+    --color-white: #ffffff;
+    --color-black: #1F2021;
+    --color-grey: #A9A9A9;
+    --color-lightgrey: #E6E6E6;
+    --color-mediumgrey: #848484;
+    --color-darkgrey: #414447;
+    --backgroud-color: #F7F7F7;
+    --shadow-color: rgba(31, 32, 33, 0.2);
+
+    --font-family-l: OpenSansL, sans-serif;
+    --font-family-r: OpenSansR, sans-serif;
+    --font-family-sb: OpenSansSB, sans-serif;
+
+    --animation-speed: .3s;
+    --animation-func: ease;
+    --animation: var(--animation-speed) var(--animation-func);
+    --button-shadow: 0px 2px 4px var(--shadow-color);
+    --container-shadow: 2px 3px 9px var(--shadow-color);
+
+    --checkbox-size: 0.75em;
+}
+
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1F2021;
-    height: 100px;
-    position: sticky;
+    grid-area: header;
+    background-color: var(--color-black);
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
+    height: 80px;
+    /*position: sticky;*/
 }
 
 body {
     margin: 0;
-    background-color: #C7C7C7;
+    background-color: var(--backgroud-color);
+    /*height: 100%;*/
 }
 
 a {
@@ -30,18 +55,6 @@ h2 {
     margin-left: 36px;
 }
 
-.info_button {
-    margin-right: 38px;
-    background-color: #1F2021;
-    border: none;
-}
-
-.info_buttom_symbol {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
-
 .nav_btm {
     display: inline-flex;
     align-items: center;
@@ -49,8 +62,10 @@ h2 {
 }
 
 .navigation {
+    display: flex;
+    justify-content: center;
     margin-left: 60px;
-    margin-top: 41px;
+    margin-top: 21px;
     margin-right: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -58,16 +73,12 @@ h2 {
     line-height: 20px;
     font-size: 17px;
     font-weight: 400;
-    color: #1F2021;
+    color: var(--color-black);
 }
 
 .navigation h2 {
     display: flex;
     justify-content: center;
-}
-
-.navigation picture {
-    margin-right: 13px;
 }
 
 .profile {
@@ -91,10 +102,11 @@ h2 {
 .edit_button {
     width: 293.33px;
     height: 48px;
-    background: #1F2021;
+    background: var(--color-black);
     box-shadow: 0px 2px 4px rgba(31, 32, 33, 0.212806);
     border-radius: 24px;
     color: #FFFFFF;
+    border-width: 0;
     font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -113,8 +125,8 @@ h2 {
     font-size: 18px;
     line-height: 25px;
     text-align: center;
-    color: black;
-    background-color: #C7C7C7;
+    color: var(--color-mediumgrey);
+    background-color: var(--backgroud-color);
     border: none;
 }
 
@@ -129,7 +141,7 @@ h2 {
     line-height: 25px;
     text-align: center;
     color: #FC1212;
-    background-color: #C7C7C7;
+    background-color: var(--backgroud-color);
     border: none;
 }
 
@@ -181,7 +193,6 @@ h2 {
     align-items: center;
     border-radius: 50%;
     background-color: rgb(0,0,0,.5);
-
 }
 
 .edit__change_name {
@@ -196,7 +207,7 @@ h2 {
     font-size: 18px;
     font-style: normal;
     line-height: 21px;
-    color: #D9D9D9;
+    color: var(--color-black);
 }
 
 .edit__change_button {
@@ -209,7 +220,7 @@ h2 {
     line-height: 19px;
     font-size: 14px;
     color: black;
-    background-color: #C7C7C7;
+    background-color: var(--backgroud-color);
     border: none;
 }
 
@@ -240,7 +251,7 @@ h2 {
     text-align: center;
     font-size: 18px;
     color: black;
-    background-color: #C7C7C7;
+    background-color: var(--backgroud-color);
     border: none;
 }
 
@@ -267,7 +278,8 @@ h2 {
     font-weight: 400;
     font-size: 18px;
     text-indent: 9%;
-    color: #D9D9D9;
+    color: var(--color-black);
+
 }
 
 .changePass__new_pass {
@@ -275,15 +287,15 @@ h2 {
 }
 
 .changePass p {
-    margin-top: 8px;
+    margin-top: 11px;
     font-weight: 300;
     font-size: 14px;
     text-align: center;
-    color: #979797;
+    color: var(--color-mediumgrey)
 }
 
 .changePass__repeat_pass {
-    margin-top: 13px;
+    margin-top: 10px;
 }
 
 .changePass__save_button {
