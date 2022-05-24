@@ -1,0 +1,44 @@
+.subheader {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: center;
+    align-items: center;
+}
+
+.subheader .subheader-naming {
+    align-self: center;
+}
+
+.subheader-button {
+    display: inline-flex;
+    align-items: center;
+    height: 56px;
+    box-sizing: border-box;
+    width: fit-content;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 17px;
+    font-family: var(--font-family-r);
+}
+
+.subheader-button:hover,
+.subheader-button:focus {
+    color: var(--color-mediumgrey);
+    transition: var(--animation) ;
+}
+
+.subheader-button-icon {
+    margin-left: auto;
+    padding: 0;
+    height: 56px;
+    width: auto;
+}
+
+.subheader-naming {
+    font-family: var(--font-family-sb);
+    font-size: 24px;
+    margin: auto;
+}
+
