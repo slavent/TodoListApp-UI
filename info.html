@@ -4,6 +4,7 @@
     <title>О приложении</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/profile.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/fonts.css">
@@ -11,24 +12,24 @@
 </head>
 <body>
 <header class="header">
-    <div class="header-logo">
-        <a class="nav_btm" href="index.html">
-            <picture>
-                <source srcset="images/logo/mob-logo.svg" media="(maxwidth:320px)">
-                <img src="images/logo/desktop-logo.svg" alt="Logo">
-            </picture>
-        </a>
+    <div class="logo header__logo" onclick="document.location='index.html'">
+        <picture>
+            <source srcset="images/logo/mob-logo.svg" media="(maxwidth:320px)">
+            <img src="images/logo/desktop-logo.svg" alt="Logo">
+        </picture>
     </div>
-    <div class="header-menu">
-        <div class="header-button">
+
+    <div class="header__menu">
+        <div class="header__button">
             <button class="icon-button-profile" onclick="document.location='profile.html'"></button>
         </div>
-        <div class="header-button">
+
+        <div class="header__button">
             <button class="icon-button-info" onclick="document.location='info.html'"></button>
         </div>
     </div>
 </header>
-<section>
+<main class="main">
     <div class="navigation">
         <a class="nav_btm" href="edit.html">
             <picture>
@@ -42,6 +43,6 @@
     <div class="about">
         <p>Версия 1.0</p>
     </div>
-</section>
+</main>
 </body>
 </html>
