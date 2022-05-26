@@ -7,7 +7,7 @@ h2 {
     font-weight: 600;
 }
 
-.nav_btm {
+.navigation__btm {
     display: inline-flex;
     align-items: center;
     width: fit-content;
@@ -45,12 +45,15 @@ h2 {
     color: #282826;
 }
 
-.profile__avatar {
+.avatar {
+    width: 100px;
+    height: 100px;
     margin-top: 72px;
     border-radius: 50%;
+    background-image: url("../images/pictures/avatar.jpg");
 }
 
-.edit_button {
+.profile__edit-button {
     width: 293px;
     height: 48px;
     background: var(--color-black);
@@ -66,7 +69,7 @@ h2 {
     text-align: center;
 }
 
-.exit_button {
+.profile__exit-button {
     margin-top: 36px;
     width: 168px;
     height: 25px;
@@ -81,7 +84,7 @@ h2 {
     border: none;
 }
 
-.delete_button {
+.profile__delete-button {
     margin-top: 47px;
     width: 168px;
     height: 25px;
@@ -128,15 +131,10 @@ h2 {
 }
 
 .edit__img {
-    width: 100px;
-    height: 100px;
-    margin-top: 72px;
     position: relative;
-    border-radius: 50%;
-    background-image: url("../images/pictures/avatar.jpg");
 }
 
-.edit__filter {
+.edit__img-filter {
     width: 100%;
     height: 100%;
     display: flex;
@@ -146,7 +144,14 @@ h2 {
     background-color: rgb(0,0,0,.5);
 }
 
-.edit__change_name {
+.edit h2 {
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #282826;
+}
+
+.edit__change-name {
     margin-top: 19px;
     box-sizing: border-box;
     width: 328px;
@@ -161,7 +166,7 @@ h2 {
     color: var(--color-black);
 }
 
-.edit__change_button {
+.edit__change-button {
     margin-top: 22px;
     width: 224px;
     height: 19px;
@@ -175,7 +180,7 @@ h2 {
     border: none;
 }
 
-.edit__save_button {
+.edit__save-button {
     margin-top: 159px;
     width: 293px;
     height: 48px;
@@ -191,7 +196,7 @@ h2 {
     text-align: center;
 }
 
-.edit__cancel_button {
+.edit__cancel-button {
     margin-top: 44px;
     width: 224px;
     height: 25px;
@@ -206,21 +211,21 @@ h2 {
     border: none;
 }
 
-.changePass {
+.change-pass {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.changePass h2 {
+.change-pass h2 {
     font-size: 24px;
     line-height: 33px;
     text-align: center;
     color: #282826;
 }
 
-.changePass input {
+.change-pass input {
     width: 437px;
     height: 48px;
     border: 1px solid #E4E4E4;
@@ -233,11 +238,11 @@ h2 {
 
 }
 
-.changePass__new_pass {
+.change-pass__new {
     margin-top: 76px;
 }
 
-.changePass p {
+.change-pass p {
     margin-top: 11px;
     font-weight: 300;
     font-size: 14px;
@@ -245,11 +250,11 @@ h2 {
     color: var(--color-mediumgrey)
 }
 
-.changePass__repeat_pass {
+.changePass__repeat {
     margin-top: 10px;
 }
 
-.changePass__save_button {
+.changePass__save-button {
     margin-top: 24px;
     width: 293px;
     height: 48px;
