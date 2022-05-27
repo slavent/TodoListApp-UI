@@ -3,11 +3,20 @@ a {
 }
 
 h2 {
-    font-family: "Open Sans", sans-serif;
+    font-family: var(--font-family-sb);
     font-weight: 600;
+    color: #282826;
 }
 
-.navigation__btm {
+p {
+
+}
+
+.test-font {
+    font-family: var(--font-family-sb);
+}
+
+.navigation__button {
     display: inline-flex;
     align-items: center;
     width: fit-content;
@@ -15,9 +24,6 @@ h2 {
 
 .navigation {
     justify-content: center;
-    margin-left: 60px;
-    margin-top: 21px;
-    margin-right: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     font-family: "Roboto", sans-serif;
@@ -41,8 +47,6 @@ h2 {
 .profile h2 {
     font-size: 24px;
     line-height: 33px;
-    text-align: center;
-    color: #282826;
 }
 
 .avatar {
@@ -53,75 +57,33 @@ h2 {
     background-image: url("../images/pictures/avatar.jpg");
 }
 
-.profile__edit-button {
-    width: 293px;
-    height: 48px;
-    background: var(--color-black);
-    box-shadow: 0 2px 4px rgba(31, 32, 33, 0.212806);
-    border-radius: 24px;
-    color: #FFFFFF;
-    border-width: 0;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-}
-
 .profile__exit-button {
     margin-top: 36px;
-    width: 168px;
-    height: 25px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
     color: var(--color-mediumgrey);
-    background-color: var(--backgroud-color);
-    border: none;
 }
 
 .profile__delete-button {
     margin-top: 47px;
-    width: 168px;
-    height: 25px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    color: #FC1212;
-    background-color: var(--backgroud-color);
-    border: none;
+    color: var(--color-red);
 }
 
 .about h2, p {
     display: flex;
     justify-content: center;
-    font-family: "Open Sans", sans-serif;
 }
 
 .about h2 {
     margin-top: 35px;
-    font-style: normal;
-    font-weight: 600;
     font-size: 24px;
     line-height: 33px;
-    text-align: center;
-    color: #282826;
+    font-family: var(--font-family-sb);
 }
 
 .about p {
     margin-top: 78px;
-    font-style: normal;
-    font-weight: 400;
     font-size: 18px;
     line-height: 25px;
-    text-align: center;
+    font-family: var(--font-family-r);
 }
 
 .edit {
@@ -147,8 +109,6 @@ h2 {
 .edit h2 {
     font-size: 24px;
     line-height: 33px;
-    text-align: center;
-    color: #282826;
 }
 
 .edit__change-name {
@@ -161,54 +121,21 @@ h2 {
     background: white;
     font-family: "Roboto", sans-serif;
     font-size: 18px;
-    font-style: normal;
     line-height: 21px;
     color: var(--color-black);
 }
 
 .edit__change-button {
     margin-top: 22px;
-    width: 224px;
-    height: 19px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 19px;
     font-size: 14px;
-    color: black;
-    background-color: var(--backgroud-color);
-    border: none;
 }
 
 .edit__save-button {
     margin-top: 159px;
-    width: 293px;
-    height: 48px;
-    background: #1F2021;
-    box-shadow: 0 2px 4px rgba(31, 32, 33, 0.212806);
-    border-radius: 24px;
-    color: #FFFFFF;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
 }
 
 .edit__cancel-button {
     margin-top: 44px;
-    width: 224px;
-    height: 25px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 24px;
-    text-align: center;
-    font-size: 18px;
-    color: black;
-    background-color: var(--backgroud-color);
-    border: none;
 }
 
 .change-pass {
@@ -221,8 +148,6 @@ h2 {
 .change-pass h2 {
     font-size: 24px;
     line-height: 33px;
-    text-align: center;
-    color: #282826;
 }
 
 .change-pass input {
@@ -235,18 +160,15 @@ h2 {
     font-size: 18px;
     text-indent: 9%;
     color: var(--color-black);
-
 }
 
-.change-pass__new {
+.change-pass {
     margin-top: 76px;
 }
 
 .change-pass p {
-    margin-top: 11px;
-    font-weight: 300;
     font-size: 14px;
-    text-align: center;
+    font-family: var(--font-family-l);
     color: var(--color-mediumgrey)
 }
 
@@ -256,16 +178,4 @@ h2 {
 
 .changePass__save-button {
     margin-top: 24px;
-    width: 293px;
-    height: 48px;
-    background: #1F2021;
-    box-shadow: 0 2px 4px rgba(31, 32, 33, 0.212806);
-    border-radius: 24px;
-    color: #FFFFFF;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
 }

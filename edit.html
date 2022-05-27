@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/profile.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/profile.css">
 </head>
 <body>
 <header class="header">
@@ -31,7 +31,7 @@
 </header>
 <main class="main">
     <div class="navigation">
-        <a class="navigation__btm" href="profile.html">
+        <a class="navigation__button" href="profile.html">
             <picture>
                 <source srcset="images/icons/desktop-back-black.svg">
                 <img src="images/icons/desktop-back-black.svg">
@@ -51,9 +51,9 @@
         </div>
         <h2>Иванов Иван Иванович</h2>
         <input class="edit__change-name" type="text" placeholder="  Иванов Иван Иванович">
-        <button class="edit__change-button" onclick="document.location='changePass.html'">Изменить пароль</button>
-        <button class="edit__save-button">Сохранить</button>
-        <button class="edit__cancel-button" onclick="document.location='profile.html'">Отменить</button>
+        <button class="secondary-button edit__change-button" onclick="document.location='change-pass.html'">Изменить пароль</button>
+        <button class="primary-button edit__save-button">Сохранить</button>
+        <button class="secondary-button edit__cancel-button" onclick="document.location='profile.html'">Отменить</button>
     </div>
 </main>
 </body>
