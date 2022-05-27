@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/profile.css">
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/profile.css">
 </head>
 <body>
 <header class="header">
@@ -31,7 +31,7 @@
 </header>
 <main class="main">
     <div class="navigation">
-        <a class="navigation__btm" href="index.html">
+        <a class="navigation__button" href="index.html">
             <picture>
                 <source srcset="images/icons/desktop-back-black.svg">
                 <img src="images/icons/desktop-back-black.svg">
@@ -41,12 +41,11 @@
         <h2>Ваш профиль</h2>
     </div>
     <div class="profile">
-<!--        <img class="profile__avatar" src="images/pictures/avatar.jpg">-->
         <div class="avatar"></div>
         <h2>Иванов Иван Иванович</h2>
-        <button class="profile__edit-button" onclick="document.location='edit.html'">Редактировать</button>
-        <button class="profile__exit-button">Выйти</button>
-        <button class="profile__delete-button">Удалить аккаунт</button>
+        <button class="primary-button" onclick="document.location='edit.html'">Редактировать</button>
+        <button class="secondary-button profile__exit-button">Выйти</button>
+        <button class="secondary-button profile__delete-button">Удалить аккаунт</button>
     </div>
 </main>
 </body>
