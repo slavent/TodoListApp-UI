@@ -2,10 +2,12 @@
     --color-white: #ffffff;
     --color-black: #1F2021;
     --color-grey: #A9A9A9;
-    --color-lightgrey: #E6E6E6;
+    --color-ultralightgrey: #E6E6E6;
+    --color-lightgrey: #D9D9D9;
     --color-mediumgrey: #848484;
     --color-darkgrey: #414447;
-    --backgroud-color: #F7F7F7;
+    --background-color: #F7F7F7;
+    --background-shading: rgba(0, 0, 0, 0.4);
     --shadow-color: rgba(31, 32, 33, 0.2);
 
     --font-family-l: OpenSansL, sans-serif;
@@ -23,14 +25,13 @@
 
 body {
     margin: 0;
-    background-color: var(--backgroud-color);
+    background-color: var(--background-color);
     font-family: var(--font-family-r);
     height: 100%;
     display: grid;
     grid-column-gap: 0;
     grid-row-gap: 24px;
-    grid-template-columns: 36px 1fr 36px;
-    grid-template-rows: 80px 1fr 60px;
+    grid-template: 80px 1fr 60px / 36px 1fr 36px;
     grid-template-areas:
         "header header header"
         "...... main ......"

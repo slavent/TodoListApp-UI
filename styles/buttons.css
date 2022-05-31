@@ -2,12 +2,10 @@
 .primary-button,
 .secondary-button,
 .round-button,
-.icon-button-chevron-left,
-.icon-button-chevron-right,
-.icon-button-profile,
-.icon-button-info {
-    font-size: 18px;
-    font-family: var(--font-family-r);
+.icon-button-chevchevron-right,
+.button-profile,
+.button-info {
+    font: 18px var(--font-family-r);
     cursor: pointer;
     outline: none;
     border: none;
@@ -19,14 +17,13 @@
 .round-button {
     color: var(--color-white);
     background-color: var(--color-black);
-    transition: background var(--animation);
     box-shadow: var(--button-shadow);
 }
 
 .primary-button {
     border-radius: 24px;
     height: 48px;
-    width: 293px;
+    width: 270px;
 }
 
 
@@ -46,6 +43,7 @@
 .primary-button:focus,
 .round-button:focus {
     background-color: var(--color-darkgrey);
+    transition: background var(--animation);
 }
 
 
@@ -53,6 +51,7 @@
 .secondary-button {
     background: transparent;
     color: var(--color-black);
+    height: 48px;
 }
 
 .secondary-button:hover,
@@ -63,7 +62,7 @@
 
 
 /* Иконка «инфо» в шапке */
-.icon-button-info {
+.button-info {
     height: 32px;
     width: 32px;
     background-color: transparent;
@@ -72,8 +71,8 @@
     background-position: center;
 }
 
-.icon-button-info:hover,
-.icon-button-info:focus {
+.button-info:hover,
+.button-info:focus {
     background-image: url(../images/icons/desktop-info-white-hover.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -83,7 +82,7 @@
 
 
 /* Иконка «профиль» в шапке */
-.icon-button-profile {
+.button-profile {
     height: 32px;
     width: 32px;
     background-color: transparent;
@@ -92,8 +91,8 @@
     background-position: center;
 }
 
-.icon-button-profile:hover,
-.icon-button-profile:focus {
+.button-profile:hover,
+.button-profile:focus {
     background-image: url(../images/icons/desktop-profile-white-hover.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -103,7 +102,7 @@
 
 
 /* Шеврон в элементах списка */
-.icon-button-chevron-right {
+.chevron-right {
     height: 80px;
     width: 80px;
     background-color: transparent;
@@ -113,8 +112,8 @@
     margin-left: auto;
 }
 
-.icon-button-chevron-right:hover,
-.icon-button-chevron-right:focus {
+.chevron-right:hover,
+.chevron-right:focus {
     background-image: url(../images/icons/universal-chevron-grey-hover.svg);
     background-repeat: no-repeat;
     background-position: left;
