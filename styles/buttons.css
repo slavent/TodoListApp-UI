@@ -105,6 +105,7 @@
 .chevron-right {
     height: 80px;
     width: 80px;
+    border: none;
     background-color: transparent;
     background-image: url(../images/icons/universal-chevron-grey.svg);
     background-repeat: no-repeat;
@@ -114,6 +115,7 @@
 
 .chevron-right:hover,
 .chevron-right:focus {
+    border: none;
     background-image: url(../images/icons/universal-chevron-grey-hover.svg);
     background-repeat: no-repeat;
     background-position: left;
