@@ -2,7 +2,7 @@
 .primary-button,
 .secondary-button,
 .round-button,
-.icon-button-chevchevron-right,
+.chevron-right,
 .button-profile,
 .button-info {
     font: 18px var(--font-family-r);
@@ -103,9 +103,9 @@
 
 /* Шеврон в элементах списка */
 .chevron-right {
+    border: none;
     height: 80px;
     width: 80px;
-    border: none;
     background-color: transparent;
     background-image: url(../images/icons/universal-chevron-grey.svg);
     background-repeat: no-repeat;
@@ -125,7 +125,7 @@
 
 
 /* Кнопка «назад» */
-.icon-button-chevron-left {
+.chevron-left {
     height: 32px;
     width: 32px;
     background-color: transparent;
@@ -135,8 +135,8 @@
     padding-right: 10px;
 }
 
-.icon-button-chevron-left:hover,
-.icon-button-chevron-left:focus {
+.chevron-left:hover,
+.chevron-left:focus {
     background-image: url(../images/icons/universal-chevron-black-hover.svg);
     background-repeat: no-repeat;
     background-position: center;

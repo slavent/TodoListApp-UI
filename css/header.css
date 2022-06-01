@@ -7,19 +7,16 @@
 
 .logo {
     cursor: pointer;
-}
-
-.header__logo {
     margin-left: 36px;
 }
 
-.header__menu {
+.nav {
     display: flex;
     align-items: center;
     justify-items: flex-end;
     margin-right: 36px;
 }
 
-.header__button {
+.nav__button {
     margin-left: 20px;
 }

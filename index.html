@@ -4,11 +4,13 @@
     <title>To-Do List App</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/fonts.css">
-    <link rel="stylesheet" href="styles/buttons.css">
-    <link rel="stylesheet" href="styles/main-index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/main-index.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/inputs.css">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -21,20 +23,20 @@
 
 <body>
     <header class="header">
-        <div class="logo header__logo" onclick="document.location='index.html'">
+        <div class="logo" onclick="document.location='index.html'">
                 <picture>
                     <source srcset="images/logo/mob-logo.svg" media="(maxwidth:320px)">
                     <img src="images/logo/desktop-logo.svg" alt="ogo">
                 </picture>
         </div>
         
-        <div class="header__menu">
-            <div class="header__button">
-                <button class="icon-button-profile" onclick="document.location='profile.html'"></button>
+        <div class="nav">
+            <div class="nav__button">
+                <button class="button-profile" onclick="document.location='profile.html'"></button>
             </div>
             
-            <div class="header__button">
-                <button class="icon-button-info" onclick="document.location='info.html'"></button>
+            <div class="nav__button">
+                <button class="button-info" onclick="document.location='info.html'"></button>
             </div>
         </div>
     </header>
@@ -45,7 +47,7 @@
                 <input type="checkbox" class="task-list__checkbox" id="task-1">
                 <label class="task-list__label" for="task-1">
                     Построить дом
-                    <button class="icon-button-chevron-right" onclick="document.location='card.html'"></button>
+                    <button class="chevron-right" onclick="document.location='card.html'"></button>
                 </label>
             </div>
 
@@ -53,7 +55,7 @@
                 <input type="checkbox" class="task-list__checkbox" id="task-2">
                 <label class="task-list__label" for="task-2">
                     Посадить дерево
-                    <button class="icon-button-chevron-right" onclick="document.location='card.html'"></button>
+                    <button class="chevron-right" onclick="document.location='card.html'"></button>
                 </label>
             </div>
 
@@ -61,16 +63,35 @@
                 <input type="checkbox" class="task-list__checkbox" id="task-3">
                 <label class="task-list__label" for="task-3">
                     Покормить кота
-                    <button class="icon-button-chevron-right" onclick="document.location='card.html'"></button>
+                    <button class="chevron-right" onclick="document.location='card.html'"></button>
                 </label>
             </div>
         </div>
     </main>
     
     <div class="footer">
-        <button class="round-button"></button>
+        <button class="round-button" id="open"></button>
+        <div id="popup" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <div class="popup__title">Новая задача</div>
+                        <div class="text-field">
+                            <input required="required" type="text" name="title" class="text-field__input" id="title">
+                            <label class="text-field__label" for="title">Название</label>
+                        </div>
+                        <div class="comment-area">
+                            <label class="comment-area__label" for="description"></label>
+                            <textarea class="comment-area__input" maxlength="250" rows="10" cols="20" name="description" id="description" placeholder="Комментарий, макс. 250 символов"></textarea>
+                        </div>
+                    <div class="popup__button-container">
+                        <button class="primary-button popup__button" onclick="" id="submit">Создать</button>
+                        <button class="secondary-button popup_button" onclick="" id="cancel">Отменить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
-    <script> </script>
+
+    <script src="js/popup.js"></script>
 </body>
 </html>
