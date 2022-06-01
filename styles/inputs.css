@@ -1,0 +1,86 @@
+.text-field,
+.comment-area {
+    display: inline-block;
+    position: relative;
+}
+
+
+.text-field__input {
+    appearance: none;
+    box-sizing: border-box;
+    font: 18px var(--font-family-l);
+    width: 430px;
+    height: 48px;
+    border-radius: 12px;
+    border: 1px solid var(--color-ultralightgrey);
+    margin: 8px 0 16px 0;
+    padding-left: 14px;
+    color: var(--color-black);
+    background-color: transparent;
+    outline: var(--color-mediumgrey);
+}
+
+.text-field__label {
+    font: 18px var(--font-family-l);
+    color: var(--color-grey);
+    position: absolute;
+    left: 10px;
+    bottom: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 430px;
+    background-color: var(--background-color);
+    padding-left: 4px;
+    padding-right: 4px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: transform .2s ease;
+    transform-origin: left top;
+}
+
+.text-field__input:focus ~ .text-field__label,
+.text-field__input:valid ~ .text-field__label {
+    transform: translateY(-140%) scale(.8);
+    color: var(--color-mediumgrey);
+}
+
+.text-field__input:focus,
+.text-field__input:hover {
+    border: 1px solid var(--color-grey);
+    transition: var(--animation);
+}
+
+.text-field__input:disabled,
+.text-field__input[readonly] {
+    background-color: var(--color-ultralightgrey);
+    opacity: 1;
+}
+
+.comment-area__input {
+    resize: none;
+    appearance: none;
+    box-sizing: border-box;
+    font: 18px var(--font-family-l);
+    width: 430px;
+    height: auto;
+    max-height: 280px;
+    border-radius: 12px;
+    border: 1px solid var(--color-ultralightgrey);
+    /*margin: 8px 0 16px 0;*/
+    padding-left: 14px;
+    padding-top: 8px;
+    color: var(--color-black);
+    background-color: transparent;
+    outline: var(--color-mediumgrey);
+}
+
+.comment-area .comment-area__input::placeholder {
+    color: var(--color-grey);
+}
+
+.comment-area__input:focus,
+.comment-area__input:hover {
+    border: 1px solid var(--color-grey);
+    transition: var(--animation);
+}

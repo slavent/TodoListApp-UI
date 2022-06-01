@@ -4,34 +4,33 @@
     <title>Редактирование профиля</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/profile.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/buttons.css">
-    <link rel="stylesheet" href="styles/profile.css">
 </head>
 <body>
 <header class="header">
-    <div class="logo header__logo" onclick="document.location='index.html'">
-        <picture>
-            <source srcset="images/logo/mob-logo.svg" media="(maxwidth:320px)">
-            <img src="images/logo/desktop-logo.svg" alt="Logo">
-        </picture>
+    <div class="header-logo">
+        <a class="nav_btm" href="index.html">
+            <picture>
+                <source srcset="images/logo/mob-logo.svg" media="(maxwidth:320px)">
+                <img src="images/logo/desktop-logo.svg" alt="Logo">
+            </picture>
+        </a>
     </div>
-
-    <div class="header__menu">
-        <div class="header__button">
+    <div class="header-menu">
+        <div class="header-button">
             <button class="icon-button-profile" onclick="document.location='profile.html'"></button>
         </div>
-
-        <div class="header__button">
+        <div class="header-button">
             <button class="icon-button-info" onclick="document.location='info.html'"></button>
         </div>
     </div>
 </header>
-<main class="main">
+<section>
     <div class="navigation">
-        <a class="navigation__button" href="profile.html">
+        <a class="nav_btm" href="profile.html">
             <picture>
                 <source srcset="images/icons/desktop-back-black.svg">
                 <img src="images/icons/desktop-back-black.svg">
@@ -41,20 +40,20 @@
         <h2>Ваш профиль</h2>
     </div>
     <div class="edit">
-        <div class="avatar edit__img">
-            <div class="edit__img-filter">
-                <picture class="edit__img-pencil">
+        <div class="edit__img">
+            <div class="edit__filter">
+                <picture class="edit__pencil">
                     <source srcset="images/icons/uniersal-edit-white.svg">
                     <img src="images/icons/uniersal-edit-white.svg">
                 </picture>
             </div>
         </div>
         <h2>Иванов Иван Иванович</h2>
-        <input class="edit__change-name" type="text" placeholder="  Иванов Иван Иванович">
-        <button class="secondary-button edit__change-button" onclick="document.location='change-pass.html'">Изменить пароль</button>
-        <button class="primary-button edit__save-button">Сохранить</button>
-        <button class="secondary-button edit__cancel-button" onclick="document.location='profile.html'">Отменить</button>
+        <input class="edit__change_name" type="text" placeholder="  Иванов Иван Иванович">
+        <button class="edit__change_button" onclick="document.location='changePass.html'">Изменить пароль</button>
+        <button class="edit__save_button">Сохранить</button>
+        <button class="edit__cancel_button" onclick="document.location='profile.html'">Отменить</button>
     </div>
-</main>
+</section>
 </body>
 </html>
