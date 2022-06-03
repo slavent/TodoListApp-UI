@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/inputs.css">
     <link rel="stylesheet" href="css/profile.css">
 </head>
 <body>
@@ -41,9 +42,17 @@
         <h2>Изменить пароль</h2>
     </div>
     <div class="edit-form">
-        <input class="edit-form__new" type="text" placeholder="Новый пароль">
-        <p>Пароль должен содержать минимум 8 символов</p>
-        <input class="edit-form__repeat" type="text" placeholder="Повторите новый пароль">
+        <div class="text-field">
+            <input required="required" type="text" name="title" class="text-field__input" id="title">
+            <label class="text-field__label" for="title">Новый пароль</label>
+        </div>
+        <div class="edit-form_text">
+            <p>Пароль должен содержать минимум 8 символов</p>
+        </div>
+        <div class="text-field">
+            <input required="required" type="text" name="title" class="text-field__input" id="title">
+            <label class="text-field__label" for="title">Повторите новый пароль</label>
+        </div>
         <button class="primary-button edit-form__save-button">Сохранить</button>
     </div>
 </main>
