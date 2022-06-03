@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Профиль</title>
+    <title>Вход</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/buttons.css">
-    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/inputs.css">
+    <link rel="stylesheet" href="css/authorization.css">
 </head>
 <body>
 <header class="header">
@@ -30,26 +31,23 @@
     </div>
 </header>
 <main class="main">
-    <div class="navigation">
-        <a class="navigation__button" href="index.html">
-            <picture>
-                <source srcset="images/icons/desktop-back-black.svg">
-                <img src="images/icons/desktop-back-black.svg">
-            </picture>
-            <p>Список дел</p>
-        </a>
-        <h2>Ваш профиль</h2>
-    </div>
-    <div class="profile">
-        <div class="avatar"></div>
-        <h2>Иванов Иван Иванович</h2>
-        <button class="primary-button" onclick="document.location='edit.html'">Редактировать</button>
-        <div class="profile__exit-button">
-            <button class="secondary-button" onclick="document.location='authorization.html'">Выйти</button>
+    <div class="authorization">
+        <h2>Вход</h2>
+        <div class="text-field">
+            <input required="required" type="text" name="login" class="text-field__input" id="login">
+            <label class="text-field__label" for="login">Логин</label>
         </div>
-        <div class="profile__delete-button">
-            <button class="secondary-button">Удалить аккаунт</button>
+        <div class="text-field">
+            <input required="required" type="text" name="pass" class="text-field__input" id="pass">
+            <label class="text-field__label" for="pass">Пароль</label>
         </div>
+        <div class="authorization__input-button" onclick="document.location='index.html'">
+            <button class="primary-button">Войти</button>
+        </div>
+        <div class="authorization__registration-button">
+            <button class="secondary-button">Регистрация</button>
+        </div>
+        <button class="secondary-button">Забыли пароль?</button>
     </div>
 </main>
 </body>
