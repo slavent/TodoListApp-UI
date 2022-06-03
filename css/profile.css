@@ -114,17 +114,17 @@ h2 {
 }
 
 .edit__change-name {
-    margin-top: 19px;
-    box-sizing: border-box;
-    width: 328px;
-    height: 48px;
-    border: 1px solid #E4E4E4;
-    border-radius: 12px;
-    background: white;
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    line-height: 21px;
-    color: var(--color-black);
+    /*margin-top: 19px;*/
+/*    box-sizing: border-box;*/
+/*    width: 328px;*/
+/*    height: 48px;*/
+/*    border: 1px solid #E4E4E4;*/
+/*    border-radius: 12px;*/
+/*    background: white;*/
+/*    font-family: "Roboto", sans-serif;*/
+/*    font-size: 18px;*/
+/*    line-height: 21px;*/
+/*    color: var(--color-black);*/
 }
 
 .edit__change-button {
@@ -147,31 +147,20 @@ h2 {
     align-items: center;
 }
 
-.edit-form h2 {
-    font-size: 24px;
-    line-height: 33px;
-}
-
-.edit-form input {
-    width: 437px;
-    height: 48px;
-    border: 1px solid #E4E4E4;
-    border-radius: 12px;
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    text-indent: 9%;
-    color: var(--color-black);
-}
-
 .edit-form {
     margin-top: 76px;
 }
 
 .edit-form p {
+    margin-top: -10px;
+    float: left;
     font-size: 14px;
     font-family: var(--font-family-l);
     color: var(--color-mediumgrey)
+}
+
+.edit-form_text {
+    width: 430px;
 }
 
 .edit-form__repeat {

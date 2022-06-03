@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/inputs.css">
     <link rel="stylesheet" href="css/profile.css">
 </head>
 <body>
@@ -50,7 +51,12 @@
             </div>
         </div>
         <h2>Иванов Иван Иванович</h2>
-        <input class="edit__change-name" type="text" placeholder="  Иванов Иван Иванович">
+        <div class="edit__change-name">
+            <div class="text-field">
+                <input required="required" type="text" name="title" class="text-field__input" id="title">
+                <label class="text-field__label" for="title">Изменить имя</label>
+            </div>
+        </div>
         <button class="secondary-button edit__change-button" onclick="document.location='edit-pass.html'">Изменить пароль</button>
         <button class="primary-button edit__save-button">Сохранить</button>
         <button class="secondary-button edit__cancel-button" onclick="document.location='profile.html'">Отменить</button>
