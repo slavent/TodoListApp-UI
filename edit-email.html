@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <title>Профиль</title>
+    <title>Изменить e-mail</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/inputs.css">
     <link rel="stylesheet" href="css/profile.css">
 </head>
 <body>
@@ -31,28 +32,21 @@
 </header>
 <main class="main">
     <div class="navigation">
-        <a class="navigation__button" href="index.html">
+        <a class="navigation__button" href="edit.html">
             <picture>
                 <source srcset="images/icons/desktop-back-black.svg">
                 <img src="images/icons/desktop-back-black.svg">
             </picture>
-            <p>Список дел</p>
+            <p>Редактирование профиля</p>
         </a>
-        <h2>Ваш профиль</h2>
+        <h2>Изменить e-mail</h2>
     </div>
-    <div class="profile">
-        <div class="avatar"></div>
-        <h2>Иванов Иван Иванович</h2>
-        <p>ivan.ivanov@gmail.com</p>
-        <div class="profile_edit-button">
-            <button class="primary-button" onclick="document.location='edit.html'">Редактировать</button>
+    <div class="edit-form">
+        <div class="text-field">
+            <input required="required" type="text" name="password" class="text-field__input" id="new-pass">
+            <label class="text-field__label" for="new-pass">e-mail</label>
         </div>
-        <div class="profile__exit-button">
-            <button class="secondary-button" onclick="document.location='authorization.html'">Выйти</button>
-        </div>
-        <div class="profile__delete-button">
-            <button class="secondary-button">Удалить аккаунт</button>
-        </div>
+        <button class="primary-button edit-form__save-button">Отправить код</button>
     </div>
 </main>
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Вход</title>
+    <title>Регистрация</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/index.css">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/inputs.css">
-    <link rel="stylesheet" href="css/authorization.css">
+    <link rel="stylesheet" href="css/registration.css">
 </head>
 <body>
 <header class="header">
@@ -29,23 +29,34 @@
 <main class="main">
 
 
-    <div class="authorization">
-        <h2>Вход</h2>
+    <div class="registration">
+        <h2>Регистрация</h2>
         <div class="text-field">
             <input required="required" type="text" name="login" class="text-field__input" id="login">
-            <label class="text-field__label" for="login">Логин</label>
+            <label class="text-field__label" for="login">Имя</label>
+        </div>
+        <div class="text-field">
+            <input required="required" type="text" name="email" class="text-field__input" id="email">
+            <label class="text-field__label" for="email">E-mail</label>
         </div>
         <div class="text-field">
             <input required="required" type="text" name="password" class="text-field__input" id="password">
             <label class="text-field__label" for="password">Пароль</label>
         </div>
-        <div class="authorization__input-button" onclick="document.location='index.html'">
-            <button class="primary-button">Войти</button>
+        <div class="registration_text">
+            <p>Пароль должен содержать минимум 8 символов</p>
         </div>
-        <div class="authorization__registration-button">
-            <button class="secondary-button" onclick="document.location='registration.html'">Регистрация</button>
+        <div class="text-field">
+            <input required="required" type="text" name="password" class="text-field__input" id="password-repeat">
+            <label class="text-field__label" for="password-repeat">Повторите пароль</label>
         </div>
-        <button class="secondary-button">Забыли пароль?</button>
+        <div class="registration__create-button" onclick="document.location='index.html'">
+            <button class="primary-button">Создать аккаунт</button>
+        </div>
+        <div class="registration__question-button">
+            <button class="secondary-button" onclick="document.location='authorization.html'">Уже есть аккаунт?</button>
+        </div>
+
     </div>
 </main>
 </body>

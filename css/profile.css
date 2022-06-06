@@ -2,10 +2,18 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: var(--color-black);
+}
+
 h2 {
     font-family: var(--font-family-sb);
     font-weight: 600;
     color: #282826;
+}
+
+p {
+    font-family: var(--font-family-l);
 }
 
 .test-font {
@@ -45,6 +53,11 @@ h2 {
     line-height: 33px;
 }
 
+.profile p {
+    margin-top: 6px;
+    font-size: 20px;
+}
+
 .avatar {
     width: 100px;
     height: 100px;
@@ -53,8 +66,12 @@ h2 {
     background-image: url("../images/pictures/avatar.jpg");
 }
 
+.profile_edit-button {
+    margin-top: 6px;
+}
+
 .profile__exit-button {
-    margin-top: 32px;
+    margin-top: 24px;
 }
 
 .profile__exit-button button {
@@ -62,7 +79,7 @@ h2 {
 }
 
 .profile__delete-button {
-    margin-top: 35px;
+    margin-top: 24px;
 }
 
 .profile__delete-button button {
@@ -113,18 +130,9 @@ h2 {
     line-height: 33px;
 }
 
-.edit__change-name {
-    /*margin-top: 19px;*/
-/*    box-sizing: border-box;*/
-/*    width: 328px;*/
-/*    height: 48px;*/
-/*    border: 1px solid #E4E4E4;*/
-/*    border-radius: 12px;*/
-/*    background: white;*/
-/*    font-family: "Roboto", sans-serif;*/
-/*    font-size: 18px;*/
-/*    line-height: 21px;*/
-/*    color: var(--color-black);*/
+.edit p {
+    margin-top: 6px;
+    font-size: 20px;
 }
 
 .edit__change-button {
@@ -145,22 +153,19 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.edit-form {
     margin-top: 76px;
 }
 
-.edit-form p {
+.edit-form_text {
+    width: 430px;
+}
+
+.edit-form_text p {
     margin-top: -10px;
     float: left;
     font-size: 14px;
     font-family: var(--font-family-l);
     color: var(--color-mediumgrey)
-}
-
-.edit-form_text {
-    width: 430px;
 }
 
 .edit-form__repeat {

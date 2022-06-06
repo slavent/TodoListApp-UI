@@ -1,0 +1,26 @@
+.registration {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registration__create-button {
+    margin-top: 10px;
+}
+
+.registration__question-button {
+    margin-top: 17px;
+}
+
+.registration_text {
+    width: 430px;
+}
+
+.registration_text p {
+    margin-top: -10px;
+    float: left;
+    font-size: 14px;
+    font-family: var(--font-family-l);
+    color: var(--color-mediumgrey)
+}
