@@ -50,10 +50,13 @@
             <p>Пароль должен содержать минимум 8 символов</p>
         </div>
         <div class="text-field">
-            <input required="required" type="text" name="password" class="text-field__input" id="new-pass-repeat">
+            <input required="required" type="text" name="password" class="text-field__input" id="new-pass-repeat" minlength="2">
             <label class="text-field__label" for="new-pass-repeat">Повторите новый пароль</label>
         </div>
-        <button class="primary-button edit-form__save-button">Сохранить</button>
+        <div class="edit-form__save-button">
+            <button class="primary-button">Сохранить</button>
+        </div>
+
     </div>
 </main>
 </body>
