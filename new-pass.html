@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Создание нового пароля</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/inputs.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/input-with-button.css">
+</head>
+<body>
+<header class="header">
+  <div class="logo" onclick="document.location='authorization.html'">
+    <picture>
+      <source srcset="images/logo/mob-logo.svg" media="(maxwidth:320px)">
+      <img src="images/logo/desktop-logo.svg" alt="ogo">
+    </picture>
+  </div>
+
+  <div class="nav">
+    <div class="nav__button">
+      <button class="button-info" onclick="document.location='info.html'"></button>
+    </div>
+  </div>
+</header>
+<main class="main">
+  <div class="navigation">
+    <a class="navigation__button" href="check-email.html">
+      <picture>
+        <source srcset="images/icons/desktop-back-black.svg">
+        <img src="images/icons/desktop-back-black.svg">
+      </picture>
+      <p>Назад</p>
+    </a>
+    <h2>Создайте новый пароль</h2>
+  </div>
+  <div class="edit-form">
+    <div class="text-field">
+      <input required="required" type="text" name="password" class="text-field__input" id="new-pass">
+      <label class="text-field__label" for="new-pass">Новый пароль</label>
+    </div>
+    <div class="edit-form_text">
+      <p>Пароль должен содержать минимум 8 символов</p>
+    </div>
+    <div class="text-field">
+      <input required="required" type="text" name="password" class="text-field__input" id="new-pass-repeat">
+      <label class="text-field__label" for="new-pass-repeat">Повторите новый пароль</label>
+    </div>
+    <div class="edit-form__button">
+      <button class="primary-button" onclick="document.location=''">Сохранить</button>
+    </div>
+
+  </div>
+</main>
+</body>
+</html>

@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/inputs.css">
     <link rel="stylesheet" href="css/registration.css">
+    <link rel="stylesheet" href="css/navigation.css">
 </head>
 <body>
 <header class="header">
-    <div class="logo">
+    <div class="logo" onclick="document.location='authorization.html'">
         <picture>
             <source srcset="images/logo/mob-logo.svg" media="(maxwidth:320px)">
             <img src="images/logo/desktop-logo.svg" alt="ogo">
@@ -27,10 +28,17 @@
     </div>
 </header>
 <main class="main">
-
-
+    <div class="navigation">
+        <a class="navigation__button" href="authorization.html">
+            <picture>
+                <source srcset="images/icons/desktop-back-black.svg">
+                <img src="images/icons/desktop-back-black.svg">
+            </picture>
+            <p>Назад</p>
+        </a>
+    </div>
     <div class="registration">
-        <h2>Регистрация</h2>
+        <h2>Создать аккаунт</h2>
         <div class="text-field">
             <input required="required" type="text" name="login" class="text-field__input" id="login">
             <label class="text-field__label" for="login">Имя</label>
@@ -50,13 +58,12 @@
             <input required="required" type="text" name="password" class="text-field__input" id="password-repeat">
             <label class="text-field__label" for="password-repeat">Повторите пароль</label>
         </div>
-        <div class="registration__create-button" onclick="document.location='index.html'">
+        <div class="registration__create-button" onclick="document.location=''">
             <button class="primary-button">Создать аккаунт</button>
         </div>
         <div class="registration__question-button">
             <button class="secondary-button" onclick="document.location='authorization.html'">Уже есть аккаунт?</button>
         </div>
-
     </div>
 </main>
 </body>

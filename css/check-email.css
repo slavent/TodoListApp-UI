@@ -1,0 +1,11 @@
+h2 {
+    font-family: var(--font-family-l);
+}
+
+.edit-form__text {
+    margin-top: 0px;
+}
+
+.edit-form__second-button {
+    margin-top: 20px;
+}

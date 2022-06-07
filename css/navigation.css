@@ -1,0 +1,35 @@
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--color-black);
+}
+
+h2 {
+    font-family: var(--font-family-sb);
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+.navigation__button {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.navigation {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: "Roboto", sans-serif;
+    line-height: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--color-black);
+}
+
+.navigation h2 {
+    display: flex;
+    justify-content: center;
+}

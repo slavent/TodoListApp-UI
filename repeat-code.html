@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Изменить e-mail</title>
+    <title>Отправить код повторно</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/index.css">
@@ -11,21 +11,17 @@
     <link rel="stylesheet" href="css/inputs.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/input-with-button.css">
+
 </head>
 <body>
 <header class="header">
-    <div class="logo" onclick="document.location='index.html'">
+    <div class="logo" onclick="document.location='authorization.html'">
         <picture>
             <source srcset="images/logo/mob-logo.svg" media="(maxwidth:320px)">
             <img src="images/logo/desktop-logo.svg" alt="ogo">
         </picture>
     </div>
-
     <div class="nav">
-        <div class="nav__button">
-            <button class="button-profile" onclick="document.location='profile.html'"></button>
-        </div>
-
         <div class="nav__button">
             <button class="button-info" onclick="document.location='info.html'"></button>
         </div>
@@ -33,23 +29,22 @@
 </header>
 <main class="main">
     <div class="navigation">
-        <a class="navigation__button" href="edit.html">
+        <a class="navigation__button" href="check-email.html">
             <picture>
                 <source srcset="images/icons/desktop-back-black.svg">
                 <img src="images/icons/desktop-back-black.svg">
             </picture>
-            <p>Редактирование профиля</p>
+            <p>Назад</p>
         </a>
-
     </div>
     <div class="edit-form">
-        <h2>Введите новый e-mail</h2>
+        <h2>Отправить код повторно</h2>
         <div class="text-field">
-            <input required="required" type="text" name="email" class="text-field__input" id="email">
-            <label class="text-field__label" for="email">e-mail</label>
+            <input required="required" type="text" name="password" class="text-field__input" id="new-pass">
+            <label class="text-field__label" for="new-pass">e-mail</label>
         </div>
-        <div class="edit-form__button" id="send-code">
-            <button class="primary-button">Отправить код</button>
+        <div class="edit-form__button">
+            <button class="primary-button" onclick="document.location='check-email.html'">Отправить код</button>
         </div>
     </div>
 </main>
