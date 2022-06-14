@@ -126,14 +126,14 @@ p {
     align-items: center;
     border-radius: 50%;
     background-color: rgb(0,0,0,.5);
-    transition: background var(--animation);
+    transition: background var(--button-animation);
 }
 
 .edit__img-filter:hover,
 .edit__img-filter:focus {
     background-color: rgb(0,0,0,.20);
     background-image: url("../images/icons/uniersal-edit-white-hover.svg");
-    transition: color var(--animation);
+    transition: color var(--button-animation);
 }
 
 .edit h2 {
