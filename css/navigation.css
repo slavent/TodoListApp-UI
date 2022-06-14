@@ -1,5 +1,6 @@
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 a:visited {
@@ -16,6 +17,10 @@ h2 {
     display: inline-flex;
     align-items: center;
     width: fit-content;
+}
+
+.navigation__button p {
+    font-family: var(--font-family-r);
 }
 
 .navigation {
