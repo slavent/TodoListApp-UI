@@ -21,7 +21,7 @@
 .task-list__label:hover,
 .task-list__label:focus {
     background-color: var(--color-lightgrey);
-    transition: background-color var(--animation);
+    transition: background-color var(--button-animation);
 }
 
 .task-list__checkbox {
@@ -54,7 +54,7 @@
 .task-list__checkbox:hover+label::before {
     transform: scale(1.2);
     color: var(--color-grey);
-    transition: color var(--animation);
+    transition: color var(--button-animation);
 }
 
 .task-list__checkbox:checked+label::before {
@@ -66,7 +66,7 @@
     color: var(--color-grey);
 }
 
-.icon-button-chevron-right {
+.chevron-right {
     margin-left: auto;
-    transition: margin-left var(--animation);
+    transition: margin-left var(--button-animation);
 }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/main-card.css">
+    <link rel="stylesheet" href="css/inputs.css">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -20,37 +21,52 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo header__logo" onclick="document.location='index.html'">
+        <div class="logo" onclick="document.location='index.html'">
             <picture>
                 <source srcset="images/logo/mob-logo.svg" media="(maxwidth:320px)">
                 <img src="images/logo/desktop-logo.svg" alt="ogo">
             </picture>
         </div>
 
-        <div class="header__menu">
-            <div class="header__button">
-                <button class="icon-button-profile" onclick="document.location='profile.html'"></button>
+        <div class="nav">
+            <div class="nav__button">
+                <button class="button-profile" onclick="document.location='profile.html'"></button>
             </div>
 
-            <div class="header__button">
-                <button class="icon-button-info" onclick="document.location='info.html'"></button>
+            <div class="nav__button">
+                <button class="button-info" onclick="document.location='info.html'"></button>
             </div>
         </div>
     </header>
 
     <main class="main">
         <div class="breadcrumbs">
-                <a class="subheader-button" onclick="document.location='index.html'">
-                    <div class="chevron-left"></div>
-                    Список дел
-                </a>
-                <span class="subheader-naming">Построить дом</span>
+            <a class="breadcrumbs__back-button" onclick="document.location='index.html'">
+                <div class="chevron-left"></div>
+                Список дел
+            </a>
+        </div>
+        <div class="task-info">
+            <div class="title">
+                <span >Построить дом</span>
+            </div>
+            <div class="date">
+                <p>Дата создания: <time datetime="2022-06-01 19:00">01.06.2022</time>
+                </p>
+            </div>
+            <div class="task-info__content">
+                <div class="task-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi deleniti eaque incidunt iure iusto nam nobis quae repellat sapiente temporibus. Animi dolores illum nemo odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur debitis excepturi explicabo maxime minus necessitatibus nostrum, porro provident quas sequi? </div>
+                <div class="task-info__comment-area">
+                    <label class="task-info__label" for="description"></label>
+                    <textarea class="task-info__textarea" rows="3" cols="200" name="description" id="description" readonly>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi cumque ducimus eligendi magnam magni molestiae nemo, neque nihil, nostrum numquam pariatur quasi quo repellat unde? Animi atque debitis fugiat. Commodi deleniti eaque incidunt iure iusto nam nobis quae repellat sapiente temporibus. Animi dolores illum nemo odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur debitis excepturi explicabo maxime minus necessitatibus nostrum, porro provident quas sequi?</textarea>
+                </div>
+            </div>
         </div>
     </main>
 
-<!--    <div class="footer">-->
-<!--        <button class="primary-button">Редактировать</button>-->
-<!--    </div>-->
+    <div class="footer">
+        <button class="primary-button">Редактировать</button>
+    </div>
 
     <script> </script>
 </body>

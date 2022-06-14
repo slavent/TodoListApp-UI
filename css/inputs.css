@@ -48,7 +48,7 @@
 .text-field__input:focus,
 .text-field__input:hover {
     border: 1px solid var(--color-grey);
-    transition: var(--animation);
+    transition: var(--button-animation);
 }
 
 .text-field__input:disabled,
@@ -67,7 +67,6 @@
     max-height: 280px;
     border-radius: 12px;
     border: 1px solid var(--color-ultralightgrey);
-    /*margin: 8px 0 16px 0;*/
     padding-left: 14px;
     padding-top: 8px;
     color: var(--color-black);
@@ -82,5 +81,10 @@
 .comment-area__input:focus,
 .comment-area__input:hover {
     border: 1px solid var(--color-grey);
-    transition: var(--animation);
+    transition: var(--button-animation);
+}
+
+.comment-area__input:read-only {
+    background-color: var(--color-ultralightgrey);
+    border: 1px solid var(--color-lightgrey);
 }

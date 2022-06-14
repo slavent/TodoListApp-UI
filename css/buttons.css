@@ -43,7 +43,7 @@
 .primary-button:focus,
 .round-button:focus {
     background-color: var(--color-darkgrey);
-    transition: background var(--animation);
+    transition: background var(--button-animation);
 }
 
 
@@ -57,7 +57,7 @@
 .secondary-button:hover,
 .secondary-button:focus {
     color: var(--color-mediumgrey);
-    transition: color var(--animation);
+    transition: color var(--button-animation);
 }
 
 
@@ -77,7 +77,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
-    transition: background-image var(--animation);
+    transition: background-image var(--button-animation);
 }
 
 
@@ -97,7 +97,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
-    transition: background-image var(--animation);
+    transition: background-image var(--button-animation);
 }
 
 
@@ -120,7 +120,7 @@
     background-repeat: no-repeat;
     background-position: left;
     background-color: transparent;
-    transition: background-image var(--animation);
+    transition: background-image var(--button-animation);
 }
 
 
@@ -133,13 +133,4 @@
     background-repeat: no-repeat;
     background-position: center;
     padding-right: 10px;
-}
-
-.chevron-left:hover,
-.chevron-left:focus {
-    background-image: url(../images/icons/universal-chevron-black-hover.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
-    transition: background-image var(--animation);
 }
