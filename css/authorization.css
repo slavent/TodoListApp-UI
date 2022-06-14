@@ -1,0 +1,14 @@
+.authorization {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.authorization__input-button {
+    margin-top: 10px;
+}
+
+.authorization__registration-button {
+    margin-top: 17px;
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/inputs.css">
     <link rel="stylesheet" href="css/profile.css">
 </head>
 <body>
@@ -42,18 +43,28 @@
     </div>
     <div class="edit">
         <div class="avatar edit__img">
-            <div class="edit__img-filter">
-                <picture class="edit__img-pencil">
-                    <source srcset="images/icons/uniersal-edit-white.svg">
-                    <img src="images/icons/uniersal-edit-white.svg">
-                </picture>
-            </div>
+            <div class="edit__img-filter"></div>
         </div>
         <h2>Иванов Иван Иванович</h2>
-        <input class="edit__change-name" type="text" placeholder="  Иванов Иван Иванович">
-        <button class="secondary-button edit__change-button" onclick="document.location='edit-pass.html'">Изменить пароль</button>
-        <button class="primary-button edit__save-button">Сохранить</button>
-        <button class="secondary-button edit__cancel-button" onclick="document.location='profile.html'">Отменить</button>
+        <div class="edit__change-name">
+            <div class="text-field">
+                <input required="required" type="text" name="name" class="text-field__input" id="name">
+                <label class="text-field__label" for="name">Изменить имя</label>
+            </div>
+        </div>
+        <p>ivan.ivanov@gmail.com</p>
+        <div class="edit__change-button">
+            <button class="secondary-button" onclick="document.location='edit-email.html'">Изменить e-mail</button>
+        </div>
+        <div class="edit__change-button">
+            <button class="secondary-button" onclick="document.location='edit-pass.html'">Изменить пароль</button>
+        </div>
+        <div class="edit__save-button">
+            <button class="primary-button">Сохранить</button>
+        </div>
+        <div class="edit__cancel-button">
+            <button class="secondary-button" onclick="document.location='profile.html'">Отменить</button>
+        </div>
     </div>
 </main>
 </body>

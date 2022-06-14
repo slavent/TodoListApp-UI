@@ -2,10 +2,18 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: var(--color-black);
+}
+
 h2 {
     font-family: var(--font-family-sb);
     font-weight: 600;
     color: #282826;
+}
+
+p {
+    font-family: var(--font-family-l);
 }
 
 .test-font {
@@ -45,6 +53,11 @@ h2 {
     line-height: 33px;
 }
 
+.profile p {
+    margin-top: 6px;
+    font-size: 20px;
+}
+
 .avatar {
     width: 100px;
     height: 100px;
@@ -53,8 +66,12 @@ h2 {
     background-image: url("../images/pictures/avatar.jpg");
 }
 
+.profile_edit-button {
+    margin-top: 6px;
+}
+
 .profile__exit-button {
-    margin-top: 32px;
+    margin-top: 24px;
 }
 
 .profile__exit-button button {
@@ -62,7 +79,7 @@ h2 {
 }
 
 .profile__delete-button {
-    margin-top: 35px;
+    margin-top: 24px;
 }
 
 .profile__delete-button button {
@@ -99,6 +116,9 @@ h2 {
 }
 
 .edit__img-filter {
+    background-image: url("../images/icons/uniersal-edit-white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: 100%;
     display: flex;
@@ -106,6 +126,14 @@ h2 {
     align-items: center;
     border-radius: 50%;
     background-color: rgb(0,0,0,.5);
+    transition: background var(--animation);
+}
+
+.edit__img-filter:hover,
+.edit__img-filter:focus {
+    background-color: rgb(0,0,0,.20);
+    background-image: url("../images/icons/uniersal-edit-white-hover.svg");
+    transition: color var(--animation);
 }
 
 .edit h2 {
@@ -113,31 +141,21 @@ h2 {
     line-height: 33px;
 }
 
-.edit__change-name {
-    margin-top: 19px;
-    box-sizing: border-box;
-    width: 328px;
-    height: 48px;
-    border: 1px solid #E4E4E4;
-    border-radius: 12px;
-    background: white;
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    line-height: 21px;
-    color: var(--color-black);
+.edit p {
+    margin-top: 6px;
+    font-size: 20px;
 }
 
-.edit__change-button {
-    margin-top: 22px;
+.edit__change-button button {
     font-size: 14px;
 }
 
 .edit__save-button {
-    margin-top: 159px;
+    margin-top: 40px;
 }
 
 .edit__cancel-button {
-    margin-top: 44px;
+    margin-top: 40px;
 }
 
 .edit-form {
@@ -145,30 +163,16 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.edit-form h2 {
-    font-size: 24px;
-    line-height: 33px;
-}
-
-.edit-form input {
-    width: 437px;
-    height: 48px;
-    border: 1px solid #E4E4E4;
-    border-radius: 12px;
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    text-indent: 9%;
-    color: var(--color-black);
-}
-
-.edit-form {
     margin-top: 76px;
 }
 
-.edit-form p {
+.edit-form_text {
+    width: 430px;
+}
+
+.edit-form_text p {
+    margin-top: -10px;
+    float: left;
     font-size: 14px;
     font-family: var(--font-family-l);
     color: var(--color-mediumgrey)
@@ -179,5 +183,9 @@ h2 {
 }
 
 .edit-form__save-button {
+    margin-top: 24px;
+}
+
+.edit-form__send-code-button {
     margin-top: 24px;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Изменить пароль</title>
+    <title>Изменить e-mail</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/index.css">
@@ -39,24 +39,16 @@
             </picture>
             <p>Редактирование профиля</p>
         </a>
-        <h2>Изменить пароль</h2>
+        <h2>Изменить e-mail</h2>
     </div>
     <div class="edit-form">
         <div class="text-field">
             <input required="required" type="text" name="password" class="text-field__input" id="new-pass">
-            <label class="text-field__label" for="new-pass">Новый пароль</label>
+            <label class="text-field__label" for="new-pass">e-mail</label>
         </div>
-        <div class="edit-form_text">
-            <p>Пароль должен содержать минимум 8 символов</p>
+        <div class="edit-form__send-code-button" id="send-code">
+            <button class="primary-button">Отправить код</button>
         </div>
-        <div class="text-field">
-            <input required="required" type="text" name="password" class="text-field__input" id="new-pass-repeat" minlength="2">
-            <label class="text-field__label" for="new-pass-repeat">Повторите новый пароль</label>
-        </div>
-        <div class="edit-form__save-button">
-            <button class="primary-button">Сохранить</button>
-        </div>
-
     </div>
 </main>
 </body>

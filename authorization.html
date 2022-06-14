@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Вход</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/inputs.css">
+    <link rel="stylesheet" href="css/authorization.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+        <picture>
+            <source srcset="images/logo/mob-logo.svg" media="(maxwidth:320px)">
+            <img src="images/logo/desktop-logo.svg" alt="ogo">
+        </picture>
+    </div>
+
+    <div class="nav">
+        <div class="nav__button">
+            <button class="button-info" onclick="document.location='info.html'"></button>
+        </div>
+    </div>
+</header>
+<main class="main">
+
+
+    <div class="authorization">
+        <h2>Вход</h2>
+        <div class="text-field">
+            <input required="required" type="text" name="login" class="text-field__input" id="login">
+            <label class="text-field__label" for="login">Логин</label>
+        </div>
+        <div class="text-field">
+            <input required="required" type="text" name="password" class="text-field__input" id="password">
+            <label class="text-field__label" for="password">Пароль</label>
+        </div>
+        <div class="authorization__input-button" onclick="document.location='index.html'">
+            <button class="primary-button">Войти</button>
+        </div>
+        <div class="authorization__registration-button">
+            <button class="secondary-button" onclick="document.location='registration.html'">Регистрация</button>
+        </div>
+        <button class="secondary-button">Забыли пароль?</button>
+    </div>
+</main>
+</body>
+</html>
