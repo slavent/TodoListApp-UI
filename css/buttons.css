@@ -4,11 +4,14 @@
 .round-button,
 .chevron-right,
 .button-profile,
-.button-info {
+.button-info,
+.negative-button,
+.navigation-button {
     font: 18px var(--font-family-r);
     cursor: pointer;
     outline: none;
     border: none;
+    text-decoration: none;
 }
 
 
@@ -57,6 +60,20 @@
 .secondary-button:hover,
 .secondary-button:focus {
     color: var(--color-mediumgrey);
+    transition: color var(--button-animation);
+}
+
+
+/* Кнопка «удалить» */
+.negative-button {
+    background: transparent;
+    color: var(--color-red);
+    height: 48px;
+}
+
+.negative-button:hover,
+.negative-button:focus {
+    color: var(--color-burgundy);
     transition: color var(--button-animation);
 }
 
@@ -115,7 +132,6 @@
 
 .chevron-right:hover,
 .chevron-right:focus {
-    border: none;
     background-image: url(../images/icons/universal-chevron-grey-hover.svg);
     background-repeat: no-repeat;
     background-position: left;
@@ -125,6 +141,25 @@
 
 
 /* Кнопка «назад» */
+.navigation-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    height: 36px;
+    background: transparent;
+    color: var(--color-black);
+    font-size: 16px;
+}
+
+.navigation-button:hover,
+.navigation-button:focus {
+    opacity: .6;
+    transition: var(--button-animation);
+}
+
+
+/* Доп. иконка для кнопки «назад» */
 .chevron-left {
     height: 32px;
     width: 32px;
@@ -132,5 +167,4 @@
     background-image: url(../images/icons/universal-chevron-black.svg);
     background-repeat: no-repeat;
     background-position: center;
-    padding-right: 10px;
 }
