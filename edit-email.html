@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/inputs.css">
-    <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/input-with-button.css">
 </head>
 <body>
@@ -32,15 +31,11 @@
     </div>
 </header>
 <main class="main">
-    <div class="navigation">
-        <a class="navigation__button" href="edit.html">
-            <picture>
-                <source srcset="images/icons/desktop-back-black.svg">
-                <img src="images/icons/desktop-back-black.svg">
-            </picture>
-            <p>Редактирование профиля</p>
+    <div class="breadcrumbs">
+        <a class="navigation-button" onclick="document.location='edit.html'">
+            <div class="chevron-left"></div>
+            Редактирование профиля
         </a>
-
     </div>
     <div class="edit-form">
         <h2>Введите новый e-mail</h2>

@@ -28,17 +28,14 @@
   </div>
 </header>
 <main class="main">
-  <div class="navigation">
-    <a class="navigation__button" onclick="history.back()">
-      <picture>
-        <source srcset="images/icons/desktop-back-black.svg">
-        <img src="images/icons/desktop-back-black.svg">
-      </picture>
-      <p>Назад</p>
+  <div class="breadcrumbs">
+    <a class="navigation-button" onclick="history.back()">
+      <div class="chevron-left"></div>
+      Назад
     </a>
-    <h2>Создайте новый пароль</h2>
   </div>
   <div class="edit-form">
+    <h2>Создайте новый пароль</h2>
     <div class="text-field">
       <input required="required" type="text" name="password" class="text-field__input" id="new-pass">
       <label class="text-field__label" for="new-pass">Новый пароль</label>

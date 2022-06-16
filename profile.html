@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/profile.css">
-    <link rel="stylesheet" href="css/navigation.css">
 </head>
 <body>
 <header class="header">
@@ -31,17 +30,14 @@
     </div>
 </header>
 <main class="main">
-    <div class="navigation">
-        <a class="navigation__button" href="index.html">
-            <picture>
-                <source srcset="images/icons/desktop-back-black.svg">
-                <img src="images/icons/desktop-back-black.svg">
-            </picture>
-            <p>Список дел</p>
+    <div class="breadcrumbs">
+        <a class="navigation-button" onclick="document.location='index.html'">
+            <div class="chevron-left"></div>
+            Список дел
         </a>
-        <h2>Ваш профиль</h2>
     </div>
     <div class="profile">
+        <h2>Ваш профиль</h2>
         <div class="avatar"></div>
         <h2>Иванов Иван Иванович</h2>
         <p>ivan.ivanov@gmail.com</p>
