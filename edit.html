@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/inputs.css">
     <link rel="stylesheet" href="css/profile.css">
-    <link rel="stylesheet" href="css/navigation.css">
 </head>
 <body>
 <header class="header">
@@ -32,17 +31,14 @@
     </div>
 </header>
 <main class="main">
-    <div class="navigation">
-        <a class="navigation__button" href="profile.html">
-            <picture>
-                <source srcset="images/icons/desktop-back-black.svg">
-                <img src="images/icons/desktop-back-black.svg">
-            </picture>
-            <p>Профиль</p>
+    <div class="breadcrumbs">
+        <a class="navigation-button" onclick="document.location='profile.html'">
+            <div class="chevron-left"></div>
+            Профиль
         </a>
-        <h2>Ваш профиль</h2>
     </div>
     <div class="edit">
+        <h2>Ваш профиль</h2>
         <div class="avatar edit__img">
             <div class="edit__img-filter"></div>
         </div>

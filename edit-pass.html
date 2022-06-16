@@ -33,17 +33,14 @@
     </div>
 </header>
 <main class="main">
-    <div class="navigation">
-        <a class="navigation__button" href="edit.html">
-            <picture>
-                <source srcset="images/icons/desktop-back-black.svg">
-                <img src="images/icons/desktop-back-black.svg">
-            </picture>
-            <p>Редактирование профиля</p>
+    <div class="breadcrumbs">
+        <a class="navigation-button" onclick="document.location='edit.html'">
+            <div class="chevron-left"></div>
+            Редактирование профиля
         </a>
-        <h2>Изменить пароль</h2>
     </div>
     <div class="edit-form">
+        <h2>Изменить пароль</h2>
         <div class="text-field">
             <input required="required" type="text" name="password" class="text-field__input" id="new-pass">
             <label class="text-field__label" for="new-pass">Новый пароль</label>
