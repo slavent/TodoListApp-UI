@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <title>Создание нового пароля</title>
+  <title>Введите код</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/index.css">
@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="css/inputs.css">
   <link rel="stylesheet" href="css/navigation.css">
   <link rel="stylesheet" href="css/input-with-button.css">
+  <link rel="stylesheet" href="css/check-email.css">
+
 </head>
 <body>
 <header class="header">
@@ -20,7 +22,6 @@
       <img src="images/logo/desktop-logo.svg" alt="ogo">
     </picture>
   </div>
-
   <div class="nav">
     <div class="nav__button">
       <button class="button-info" onclick="document.location='info.html'"></button>
@@ -36,24 +37,24 @@
       </picture>
       <p>Назад</p>
     </a>
-    <h2>Создайте новый пароль</h2>
   </div>
   <div class="edit-form">
+    <picture>
+      <source srcset="images/icons/email-image.svg">
+      <img src="images/icons/email-image.svg">
+    </picture>
+    <h2>Проверьте вашу электронную почту</h2>
+    <p class="edit-form__text">Мы отправили Вам код для подтверждения нового e-mail</p>
     <div class="text-field">
-      <input required="required" type="text" name="password" class="text-field__input" id="new-pass">
-      <label class="text-field__label" for="new-pass">Новый пароль</label>
-    </div>
-    <div class="edit-form_text">
-      <p>Пароль должен содержать минимум 8 символов</p>
-    </div>
-    <div class="text-field">
-      <input required="required" type="text" name="password" class="text-field__input" id="new-pass-repeat">
-      <label class="text-field__label" for="new-pass-repeat">Повторите новый пароль</label>
+      <input required="required" type="text" name="number" class="text-field__input" id="code">
+      <label class="text-field__label" for="code">Код из письма</label>
     </div>
     <div class="edit-form__button">
-      <button class="primary-button" onclick="document.location=''">Сохранить</button>
+      <button class="primary-button" onclick="document.location=''">Отправить</button>
     </div>
-
+    <div class="edit-form__second-button">
+      <button class="secondary-button" onclick="document.location='repeat-code.html'">Отправить код повторно</button>
+    </div>
   </div>
 </main>
 </body>
